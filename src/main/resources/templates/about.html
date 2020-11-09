@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="">
+<head>
+    <meta charset="UTF-8" content="text/html" http-equiv="Content-Type">
+    <title>Title</title>
+    <link  rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<header th:insert="blocks/header :: header"></header>
+
+
+<section class="jumbotron text-center">
+    <div class="container">
+        <h1 th:text="${title}"></h1>
+        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <p>
+            <a href="#" class="btn btn-primary my-2">Main call to action</a>
+            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        </p>
+    </div>
+</section>
+
+<footer th:insert="blocks/footer :: footer"></footer>
+
+</body>
+</html>
